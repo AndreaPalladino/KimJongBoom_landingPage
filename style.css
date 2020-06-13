@@ -19,6 +19,18 @@
     background-repeat: no-repeat;
     background: linear-gradient(90deg, rgba(95, 72, 72,1),  rgba(255,255,255,0.5));
   }
+.sfondo {
+   background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(95, 72, 72,1),  rgba(255,255,255,0.5));
+  }
+  .odnofs{
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg,rgba(255,255,255,0.5), rgba(95, 72, 72,1));
+}
 .kim{
     background-image: url('media/kim.png');
     z-index: 999;
@@ -54,4 +66,27 @@
 }
 .move{
     transform: translateX(-20px);
+}
+.iconX{
+  transform: translateX(125px);
+}
+@media screen and (max-width:600px){
+    .iconX{
+        transform: translateX(170px);
+        padding-bottom: 2px;
+      }
+}
+.moveText{
+    transform: translateX(-80px);
+}
+@media screen and (max-width:600px){
+    .moveText{
+        transform: translateX(0px);
+    }
+    .moveImg{
+        right:40px;
+    }
+}
+.moveImg{
+    transform: translateX(80px);
 }
