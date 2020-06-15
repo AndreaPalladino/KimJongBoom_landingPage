@@ -57,6 +57,14 @@
     height:100vh;
 }
 @media screen and (max-width:600px){
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(-90deg,rgba(51,51,51,0.9),white);
+  }
     .kim{
         background-image: url('media/kim.png');
         z-index: 999;
@@ -64,7 +72,7 @@
         background-position: right;
         background-repeat: no-repeat;
         height:100vh;
-        transform: translateX(-120px);
+        transform: translateX(-150px);
     }
     .text-custom{
         font-family: Armata;
@@ -113,7 +121,7 @@
     background: linear-gradient(-90deg,transparent,var(--trenta-color),transparent);
 }
 .bgMio{
-    background-image: url('media/pyg.jpg'), linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+    background-image: url('media/pyg.jpg'), linear-gradient(to right, transparent, rgba(255,255,255,0.4),transparent);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -123,7 +131,7 @@
 }
 @media screen and (max-width:600px){
     .bgMio{
-        background-image: url('media/pyg.jpg'), linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+        background-image: url('media/pyg.jpg'), linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -132,6 +140,13 @@
     .logo{
         display: none;
     }
+}
+.bgVolo{
+  background-image: url(media/flight.jpg), linear-gradient(rgba(226, 246, 247, 0.9), rgba(224, 245, 247, 0.4));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
 }
 .feature-box-1 {
     padding: 32px;
@@ -410,4 +425,93 @@
 }
 .review-block-description{
 	font-size:13px;
+}
+.himg{
+  height:30vh;
+  width:50vh;
+}
+@media screen and (max-width:600px){
+  .himg{
+    height:25vh;
+    width:80vh;
+  }
+}
+.bgOffer{
+  background:linear-gradient(90deg,white,var(--sessanta-color));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+.kim2{
+  background-image: url('media/kim2.png');
+  z-index: 999;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height:50vh;
+}
+.specialOff{
+  background-image: url('media/offer.jpg');
+  z-index: 999;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height:40vh;
+}
+@media (max-width:600px){
+  
+  .kim2{
+   display:none;
+  }
+  .specialOff{
+    background-image: url('media/offer.jpg');
+    background-position: center;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height:40vh;
+    transform: translateX(-150px);
+  }
+}
+
+.contact{
+  padding: 4%;
+  height: 400px;
+}
+.col-md-3{
+  background:var(--dieci-color);
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 15%;
+}
+.contact-info h2{
+  margin-bottom: 10%;
+}
+.col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+  font-weight:600;
+}
+.contact-form button{
+  background: var(--dieci-color);
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus{
+  box-shadow:none;
+}
+.sposta{
+  transform:translateX(50px) ;
 }
