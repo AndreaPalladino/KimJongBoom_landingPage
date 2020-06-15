@@ -22,6 +22,9 @@
 .text-custom{
     font-family: Armata;
 }
+.text-custom_head{
+  font-family: Armata;
+}
 .text-prag{
     font-family: Quantico;
 }
@@ -60,28 +63,27 @@
   .masthead {
     height: 100vh;
     min-height: 500px;
-    background-size: contain;
-    background-position: right;
+    background-size: cover;
+    background-position:right;
     background-repeat: no-repeat;
-    background: linear-gradient(-90deg,rgba(51,51,51,0.9),white);
+    background-image: url(media/sfondo600.jpg);
+    
   }
     .kim{
-        background-image: url('media/kim.png');
-        z-index: 999;
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-        height:100vh;
-        transform: translateX(-150px);
+        display: none;
     }
-    .text-custom{
+    .text-custom_head{
         font-family: Armata;
         font-size: 18px;
+        
+        transform: translateX(250px) !important;
     
     }
     .bg-text{
         color: var(--dieci-color);
         font-size: 50px;
+        text-align: right;
+        transform: translateX(200px);
     }
 }
 .barra{
@@ -388,7 +390,7 @@
 	color:#FFF;
 }
 .rating-block{
-	background-color:var(--trenta-color);
+	background-color:#EFEFEF;
 	border:1px solid #EFEFEF;
 	padding:15px 15px 20px 15px;
 	border-radius:3px;
@@ -401,7 +403,7 @@
 }
 
 .review-block{
-	background-color:var(--trenta-color);
+	background-color:#EFEFEF;
 	border:1px solid #EFEFEF;
 	padding:15px;
 	border-radius:3px;
@@ -425,6 +427,10 @@
 }
 .review-block-description{
 	font-size:13px;
+}
+.himg_1{
+  height:30vh;
+  width:50vh;
 }
 .himg{
   height:30vh;
@@ -514,4 +520,10 @@
 }
 .sposta{
   transform:translateX(50px) ;
+}
+.cardImg{
+  height:30vh;
+}
+html{
+  scroll-behavior: smooth;
 }
