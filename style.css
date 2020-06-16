@@ -1,12 +1,9 @@
 :root{
     --dieci-color:#3c7dd9;
-}
-:root{
     --sessanta-color:#333333;
-}
-:root{
     --trenta-color:#777777;
 }
+
 .bg-custom{
     background-color: var(--dieci-color);
 }
@@ -35,12 +32,15 @@
     background-position: right;
     background-repeat: no-repeat;
     background: linear-gradient(-90deg,rgba(51,51,51,0.9),white);
+    
   }
+
 .sfondo {
    background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
     background-color:rgba(51,51,51,0.9);
+  
   }
   .odnofs{
     background-size: contain;
@@ -58,15 +58,16 @@
     background-position: right;
     background-repeat: no-repeat;
     height:100vh;
+    
 }
 @media screen and (max-width:600px){
   .masthead {
     height: 100vh;
     min-height: 500px;
     background-size: cover;
-    background-position:right;
+    background-position: -430px;
     background-repeat: no-repeat;
-    background-image: url(media/sfondo600.jpg);
+    background-image: url('media/sfondo600.jpg');
     
   }
     .kim{
@@ -211,50 +212,12 @@
     left: 0;
     right: auto;
   }
-  .price-tabs {
-    background-color: #fff;
-    -webkit-box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
-            box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
-    display: inline-block;
-    padding: 7px;
-    border-radius: 40px;
-    border: 1px solid #00b5ec;
-    margin-bottom: 45px;
-  }
-  
-  @media (min-width: 768px) {
-    .price-tabs {
-      margin-bottom: 60px;
-    }
-  }
-  
-  .price-tabs .nav-link {
-    color: var(--sessanta-color);
-    font-weight: 500;
-    font-family: Quantico;
-    font-size: 16px;
-    padding: 12px 35px;
-    display: inline-block;
-    text-transform: capitalize;
-    border-radius: 40px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  
-  @media (min-width: 768px) {
-    .price-tabs .nav-link {
-      padding: 12px 40px;
-    }
-  }
-  
-  .price-tabs .nav-link.active {
-    background-color: var(--sessanta-color);
-    color: #fff;
-  }
+   /* Stili per i price tag */
+ 
   
   .price-item {
     background-color: #fff;
-    -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+            box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
             box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
     border-radius: 10px;
   }
@@ -267,7 +230,7 @@
   }
   
   .price-item .price-top {
-    -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+            box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
             box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
     padding: 50px 0 25px;
     background-color:var(--sessanta-color);
@@ -294,9 +257,9 @@
     left: 0;
     bottom: -17px;
     z-index: -1;
-    -webkit-transform: skewY(5deg);
             transform: skewY(5deg);
-    -webkit-box-shadow: 0 5px 10px 0 rgba(113, 113, 113, 0.15);
+            transform: skewY(5deg);
+            box-shadow: 0 5px 10px 0 rgba(113, 113, 113, 0.15);
             box-shadow: 0 5px 10px 0 rgba(113, 113, 113, 0.15);
   }
   
@@ -348,43 +311,36 @@
       left: 0;
       top: 3px;
     }
-  }
-  
-  .price-item .price-content .zmdi-check {
-    color: #28a745;
-  }
-  
-  .price-item .price-content .zmdi-close {
-    color: #f00;
-  }
-  
-  .popular {
+  } 
+  .sfondoInvert {
     background-color: var(--sessanta-color);
   }
   
-  .popular .price-top {
+  .sfondoInvert .price-top {
     background-color: #fff;
   }
   
-  .popular .price-top:after {
+  .sfondoInvert .price-top:after {
     background-color: #fff;
   }
   
-  .popular .price-top h4 {
+  .sfondoInvert .price-top h4 {
     color: #101f41;
   }
   
-  .popular .price-top h2, .popular .price-top span, .popular .price-top sup {
+  .sfondoInvert .price-top h2, .sfondoInvert .price-top span, .sfondoInvert .price-top sup {
     color: var(--sessanta-color);
   }
   
-  .popular .price-content ul *,
-  .popular .price-content ul .zmdi-close, .popular .price-content ul .zmdi-check {
+  .sfondoInvert .price-content ul *,
+   .price-content ul  .price-content ul {
     color: #fff !important;
   }
   .priceText{
       transform: translateY(200px);
   }
+  /* Fine stili per i Price Tag */
+  /* Stili per i feedback */
   .btn-grey{
     background-color:#EFEFEF;
 	color:#FFF;
@@ -428,6 +384,7 @@
 .review-block-description{
 	font-size:13px;
 }
+/* Fine stili per i feedback */
 .himg_1{
   height:30vh;
   width:50vh;
@@ -481,6 +438,7 @@
   }
 }
 
+/* Stili per il form */
 .contact{
   padding: 4%;
   height: 400px;
@@ -518,6 +476,7 @@
 .contact-form button:focus{
   box-shadow:none;
 }
+/* Fine stili per form */
 .sposta{
   transform:translateX(50px) ;
 }
