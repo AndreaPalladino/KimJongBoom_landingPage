@@ -7,6 +7,9 @@
 .bg-custom{
     background-color: var(--dieci-color);
 }
+.bg-60{
+  background-color: var(--sessanta-color);
+}
 .bg-text{
     color: var(--dieci-color);
 }
